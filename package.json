@@ -1,13 +1,22 @@
 {
-  "name": "apiv3",
+  "name": "redebrasilrppublic",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
+  "description": "api publica para envio de renovação de certificado",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": 
+    "start": "node -r dotenv/config index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Alexandre Henrique da Rocha Araújo",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "bling": "^0.12.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.2",
+    "swagger-ui-express": "^5.0.0",
+    "twilio": "^4.19.0"
+  }
 }
