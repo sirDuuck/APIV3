@@ -31,3 +31,6 @@ export const WhatsAppSms = async (tel, msg) => {
   return resposta;
 };
 
+
+export const index = "APIv3/src/api/whatsapp/index.js";
+

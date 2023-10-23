@@ -53,3 +53,6 @@ export const getCNPJ = async (cnpj) => {
     };
   }
 };
+
+// src/api/pasta1/index.js
+export const index = "APIv3/src/api/consultar/index.js.js";
