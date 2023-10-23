@@ -1,3 +1,8 @@
+class whatsapp {
+    constructor() {
+
+    }
+};   
 import "dotenv/config";
 import axios from "axios";
 
@@ -32,5 +37,5 @@ export const WhatsAppSms = async (tel, msg) => {
 };
 
 
-export const index = "APIv3/src/api/whatsapp/index.js";
+export default whatsapp;
 

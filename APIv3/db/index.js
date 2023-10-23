@@ -1,5 +1,5 @@
-import Connection from './conection';
-import Table from './table';
+import Connection from './Connection/index.js';
+import Table from './Table/index.js';
 
 const connectionInstance = new Connection();
 const tableInstance = new Table();

@@ -1,3 +1,5 @@
+class renovacao {
+  constructor() {
 renovacao.post("/register/:authorization", async (req, res) => {
     try {
       const data = req.body;
@@ -118,7 +120,7 @@ renovacao.post("/register/:authorization", async (req, res) => {
         res.status(400).send(error);
       }
     }
-  );
+  );renovação
   
   renovacao.post("/agenda", async (req, res) => {
     const dados = req.body;
@@ -208,6 +210,8 @@ renovacao.post("/register/:authorization", async (req, res) => {
         res.status(400).json(err);
       });
   });
+  }
+};
   
   export default renovacao;
   

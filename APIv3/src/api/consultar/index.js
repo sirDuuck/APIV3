@@ -1,3 +1,8 @@
+class consultar {
+  constructor() {
+
+  }
+}; 
 import consultarCNPJ from "consultar-cnpj";
 
 export const getCNPJ = async (cnpj) => {
@@ -55,4 +60,4 @@ export const getCNPJ = async (cnpj) => {
 };
 
 // src/api/pasta1/index.js
-export const index = "APIv3/src/api/consultar/index.js.js";
+export default consultar;

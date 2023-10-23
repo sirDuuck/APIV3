@@ -1,1 +1,6 @@
-export const index = "APIv3/src/api/reqt/index.js";
+class reqt {
+    constructor() {
+    }
+};
+
+export default reqt;
