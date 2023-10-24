@@ -1,10 +1,11 @@
-import axios from "axios"
+import { WhatsAppCreateAtendimento, WhatsAppImage } from "./APIv3/src/api/whatsapp/index.js";
 
-const dateFormat = {
-    
+export const EnvioImg = async (tel) => {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await WhatsAppImage(tel, "Para agilizar o seu atendimento, por gentileza! Nos envie uma foto da sua CNH.\nCaso tenha dúvida, siga o exemplo acima!");
 }
 
-
-
-
-export default dateFormat 
+export async function CriarAtendimento(tel) {
+  await new Promise(resolve => setTimeout(resolve, 5000));
+  await WhatsAppCreateAtendimento(tel);
+}

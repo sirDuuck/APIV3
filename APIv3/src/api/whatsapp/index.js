@@ -3,7 +3,7 @@ import axios from "axios"
 const Whatsapp = {
     sendTxt: async (tel, sms) => {
         try {
-            const URL = `${process.env.ZAP_URL_API}/core/v2/api/chats/send-text`
+            const URL = `${process.env.ZAP_URL_API}/core/v3/api/chats/send-text`
             const Requeste = await axios({
                 method: "POST",
                 url: URL,
@@ -33,5 +33,3 @@ const Whatsapp = {
 }
 
 export default Whatsapp
-
-
