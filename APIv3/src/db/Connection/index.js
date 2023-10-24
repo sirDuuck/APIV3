@@ -13,4 +13,4 @@ DataBese.authenticate()
      .catch(err => {
           console.error('👎👎 Erro: Conexão com o banco de dados não realizada:' + err + '👎👎');
      });
-export default Connection
+export default DataBese
