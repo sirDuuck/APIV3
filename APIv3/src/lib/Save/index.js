@@ -1,7 +1,7 @@
 import Config from "APIv3/src/lib/config/config.js";
 import { LogRegister } from "APIv3/src/lib/log/index.js";
 
-export const Save = async (data, v3) => {
+const Save = async (data, v3) => {
   const confg = await Config(data, v3);
   const dados = {
     user: confg.data.contador,
@@ -15,3 +15,5 @@ export const Save = async (data, v3) => {
   console.log(reg);
   return confg;
 };
+
+export default Save

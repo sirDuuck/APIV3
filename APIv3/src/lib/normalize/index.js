@@ -1,4 +1,4 @@
-export function normalizeString(input) {
+function normalizeString(input) {
     if (!input) {
         return ''; // ou qualquer valor padrão que você queira
     }
@@ -9,4 +9,6 @@ export function normalizeString(input) {
         .replace(/&/g, 'E')
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "");
-}
+};
+
+export default normalize

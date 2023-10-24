@@ -1,4 +1,4 @@
-export const AgendaHora = async () => {
+const AgendaHora = async () => {
     const date = new Date();
     var data2 = new Date();
     var data3 = new Date();
@@ -77,3 +77,5 @@ export const AgendaHora = async () => {
 
     return resposta;
 };
+
+export default hora 

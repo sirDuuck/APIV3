@@ -1,6 +1,6 @@
 import { RequestPost } from "../APIv3/src/api/RequestGet/index.js";
 
-export const LogRegister = async (data) => {
+const LogRegister = async (data) => {
     const url = "/registro";
     const check = await RequestPost(url, {
         user: data.user,

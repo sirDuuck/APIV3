@@ -1,7 +1,7 @@
 import { RequestGet } from ".APIv3/src/api/RequestGet/index.js";
 import { LogRegister } from ".APIv3/src/lib/log/index.js";
 
-const Process1 = {
+const Process = {
  sendAutorization: async (authorization) => {
   try {
     const urlCheck = "/check/erp/" + authorization;
@@ -26,3 +26,5 @@ const Process1 = {
   console.error(error);
 }
 };
+
+export default Process
