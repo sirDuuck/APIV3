@@ -1,5 +1,5 @@
 import Sequelize from "sequelize";
-import database from "../conection/db.js";
+import database from "../Connection/index.js";
 
 const ERP = database.define(
   "erp",

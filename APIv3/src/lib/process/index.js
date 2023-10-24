@@ -1,5 +1,5 @@
-import { RequestGet } from "../api/reqt.js";
-import { LogRegister } from "./log.js";
+import { RequestGet } from ".APIv3/src/api/RequestGet/index.js";
+import { LogRegister } from ".APIv3/src/lib/log/index.js";
 
 export const Process1 = async (authorization) => {
   try {
