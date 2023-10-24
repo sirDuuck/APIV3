@@ -1,10 +1,14 @@
-import axios from "axios"
+export function normalizeString(input) {
+    if (!input) {
+        return ''; // ou qualquer valor padrão que você queira
+    }
 
-const dateFormat = {
-    
-}
+    return input
+        .toUpperCase()
+        .replace(/[Çç]/g, 'C')
+        .replace(/&/g, 'E')
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+};  
 
-
-
-
-export default dateFormat 
+export default normalize

@@ -1,17 +1,17 @@
 import { RequestPost } from "../APIv3/src/api/RequestGet/index.js";
 
 export const LogRegister = async (data) => {
-  const url = "/registro";
-  const check = await RequestPost(url, {
-    user: data.user,
-    clienteId: data.clienteId,
-    clienteTel: data.clienteTel,
-    clienteName: data.clienteName,
-    clienteValor: data.clienteValor,
-    error: data.error,
-  });
+    const url = "/registro";
+    const check = await RequestPost(url, {
+        user: data.user,
+        clienteId: data.clienteId,
+        clienteTel: data.clienteTel,
+        clienteName: data.clienteName,
+        clienteValor: data.clienteValor,
+        error: data.error,
+    });
 
-  return check;
+    return check;
 };
 
 export default log 

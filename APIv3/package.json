@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node -r dotenv/config index.js"
   },
-  "author": "Alexandre Henrique da Rocha Araújo",
+  "author": "Alexandre Henrique da Rocha Araújo, Brando Souza de Araujo",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.5.1",
