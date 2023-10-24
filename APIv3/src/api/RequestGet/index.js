@@ -48,3 +48,5 @@ const makeRequest = {
   }
 
 };
+
+export default RequestGet
