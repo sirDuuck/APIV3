@@ -14,4 +14,4 @@ const LogRegister = async (data) => {
     return check;
 };
 
-export default log 
+export default LogRegister 
