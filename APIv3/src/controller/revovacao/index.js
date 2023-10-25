@@ -1,9 +1,12 @@
+import { Express } from "express";
 
 
-
-
-const RenovacaoController ={
-
-} 
-
-export default RenovacaoController;
+export async function ProcessRenovacao(req, res){
+    try {
+        const data= req.body
+        const token = req.params.authorization;
+        
+    } catch (error) {
+        
+    }
+}
