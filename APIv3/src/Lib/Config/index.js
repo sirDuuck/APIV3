@@ -1,11 +1,11 @@
-import { getCNPJ } from "./APIv3/src/api/consultarCnpj/index.js";
+import { getCNPJ } from "./APIv3/src/api/ConsultarCnpj/index.js";
 import { RequestPost } from "./APIv3/src/api/RequestGet/index.js";
-import { Process1 } from "./APIv3/src/lib/process/index.js";
-import { AgendaHora } from "./APIv3/src/lib/hora/index.js";
-import { WhatsAppCreateAtendimento, WhatsAppImage, WhatsAppSms } from "./APIv3/src/api/whatsapp/index.js";
-import { normalizeString } from "./APIv3/src/lib/normalize/index.js";
-import { DataFormat } from "./APIv3/src/lib/dateFormat/index.js";
-import { CriarAtendimento, EnvioImg } from "./APIv3/src/lib/envio/index.js";
+import { Process1 } from "./APIv3/src/lib/Process1/index.js";
+import { AgendaHora } from "./APIv3/src/Lib/Hora/index.js";
+import { WhatsAppSms } from "./APIv3/src/api/Whatsapp/index.js";
+import { normalizeString } from "./APIv3/src/Lib/Normalize/index.js";
+import { DataFormat } from "./APIv3/src/Lib/DateFormat/index.js";
+import { CriarAtendimento, EnvioImg } from "./APIv3/src/Lib/Envio/index.js";
 
 export default async function Config(data, erp) {
   try {
