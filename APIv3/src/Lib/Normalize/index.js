@@ -11,4 +11,4 @@ function normalizeString(input) {
         .replace(/[\u0300-\u036f]/g, "");
 };
 
-export default normalize
+export default Normalize

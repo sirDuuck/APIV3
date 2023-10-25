@@ -1,5 +1,4 @@
 import Sequelize from "sequelize";
-import database from "../Connection/index.js";
 
 const ERP = database.define(
   "erp",
@@ -32,8 +31,8 @@ const ERP = database.define(
     updatedAt: Sequelize.DATE,
     cnpj: Sequelize.TEXT,
     authorization: Sequelize.TEXT,
-    repasse:Sequelize.INTEGER(11),
-    unidade:Sequelize.TEXT
+    repasse: Sequelize.INTEGER(11),
+    unidade: Sequelize.TEXT
   },
   { freezeTableName: true }
 ); // função para conectar tebela ja criada

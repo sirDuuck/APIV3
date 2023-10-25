@@ -1,5 +1,3 @@
-import renovacaoCheck from "../renovacaoCheck";
-
 renovacao.post(
     "/register/v3/:authorization/nome/cnpj/:email/:telefone",
     async (req, res) => {
@@ -69,4 +67,4 @@ renovacao.post(
     }
 );
 
-export default renovacaoURL
+export default RenovacaoURL

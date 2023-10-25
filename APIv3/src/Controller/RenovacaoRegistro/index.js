@@ -38,8 +38,8 @@ renovacao.post("/register/:authorization", async (req, res) => {
       };
       const reg = await LogRegister(data);
       console.log(reg);
-console.log("cpf e cnpj vazio");
-res.status(500).send("the name is missing");
+      console.log("cpf e cnpj vazio");
+      res.status(500).send("the name is missing");
     } else {
       const reg = await Save(data, token)
       res.status(201).joson(reg);
@@ -65,4 +65,4 @@ renovacao.post("/registro", async (req, res) => {
     });
 });
 
-export default renovacaoRegistro
+export default RenovacaoRegistro

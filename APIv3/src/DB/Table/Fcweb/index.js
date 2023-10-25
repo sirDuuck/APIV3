@@ -1,5 +1,4 @@
 import Sequelize from 'sequelize';
-import database from '../Connection/index.js';
 
 const Fcweb = database.define('fcweb', { //nome da tabela a ser conectada
      

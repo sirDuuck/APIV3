@@ -1,10 +1,3 @@
-/* class reqt {
-    constructor() {
-    }
-};
-
-export default reqt; */
-
 import axios from "axios";
 
 const makeRequest = {

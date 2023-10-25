@@ -21,4 +21,4 @@ renovacao.post("/agenda", async (req, res) => {
     }
 });
 
-export default renovacaoAgenda
+export default RenovacaoAgenda
