@@ -1,6 +1,6 @@
 import express from 'express';
 import swaggerUi from 'swagger-ui-express'
-import renovacao from 'APIv3/src/controller/index.js';
+import renovacao from 'APIv3/src/Controller/Renovacao/index.js';
 import swagerDoc from '' assert {type: "json" };
 import cors from 'cors';
 

@@ -3,7 +3,7 @@ import axios from "axios";
 const ConsultarCNPJ = {
   getCNPJ: async (cnpj) => {
     try {
-      const response = await axios.get(`https://sua-api/cnpj/${cnpj}`);
+      const response = await axios.get(`https://sua-api/cnpj/${cnpj}`); //Trocar pelo site da "API"
       const empresa = response.data;
       return {
         razao: empresa.razao_social,

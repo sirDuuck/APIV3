@@ -5,6 +5,7 @@
   "description": "api publica para envio de renovação de certificado",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node -r dotenv/config index.js"
   },
   "author": "Alexandre Henrique da Rocha Araújo, Brando Souza de Araujo",
