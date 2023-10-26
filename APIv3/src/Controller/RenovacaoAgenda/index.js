@@ -1,4 +1,4 @@
-renovacao.post("/agenda", async (req, res) => {
+const RenovacaoAgenda = async (req, res) => {
     const dados = req.body;
     console.log(dados);
 
@@ -19,6 +19,6 @@ renovacao.post("/agenda", async (req, res) => {
             res.status(400).json(err);
         }
     }
-});
+};
 
 export default RenovacaoAgenda

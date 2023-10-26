@@ -37,7 +37,7 @@ const Fcweb = database.define('fcweb', { //nome da tabela a ser conectada
         telefone: Sequelize.TEXT,
         telefone2: Sequelize.TEXT,
         email: Sequelize.TEXT,
-        dtnascimento: Sequelize.TEXT,
+        dt_nascimento: Sequelize.TEXT,
         rg: Sequelize.TEXT,
         cei: Sequelize.TEXT,
         endereco: Sequelize.TEXT,

@@ -1,4 +1,4 @@
-renovacao.get("/check/erp/:authorization", async (req, res) => {
+const RenovacaoCheck = async (req, res) => {
     await ERP.findOne({
         where: {
             authorization: {
@@ -18,7 +18,7 @@ renovacao.get("/check/erp/:authorization", async (req, res) => {
             console.log(err);
             res.stats(400).json(err);
         });
-});
+};
 
 renovacao.get("/check/valid:cnpj", async (req, res) => {
     await Fcweb.findOne({

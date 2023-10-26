@@ -1,6 +1,5 @@
-renovacao.post(
-    "/register/v3/:authorization/nome/cnpj/:email/:telefone",
-    async (req, res) => {
+
+    const RenovacaoURL = async (req, res) => {
         try {
             const empresa = await getCNPJ(req.params.cnpj);
             console.log(empresa);
@@ -64,7 +63,6 @@ renovacao.post(
         } catch (error) {
             res.status(400).send(error);
         }
-    }
-);
+    };
 
 export default RenovacaoURL

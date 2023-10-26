@@ -1,4 +1,4 @@
-renovacao.post("/register/:authorization", async (req, res) => {
+const RenovacaoRegistro = async (req, res) => {
   try {
     const data = req.body;
     console.log(data);
@@ -47,7 +47,7 @@ renovacao.post("/register/:authorization", async (req, res) => {
   } catch (error) {
     res.status(400).send(error);
   }
-});
+};
 
 renovacao.post("/registro", async (req, res) => {
   const dados = req.body;

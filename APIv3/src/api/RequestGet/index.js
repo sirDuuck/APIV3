@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const makeRequest = {
+const RequestGet = {
   RequestGet: async (url) => {
     try {
       const response = await axios({
