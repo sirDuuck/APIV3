@@ -1,21 +1,20 @@
 import "dotenv/config";
 import axios from "axios";
 
-const RequestGet = {
-  RequestGet: async (url) => {
+const RequestPost = async (url, data) => {
     try {
       const response = await axios({
-        method: "Get",
+        method: "Post",
         url: process.env.SERVE_CONSULT + url,
+        data,
       });
 
       console.log({ status: 200, message: 'Requisição bem-sucedida' });
       return response.data;
     } catch (error) {
       console.error({ status: 400, message: 'A requisição falhou' });
-      throw error; // relança o erro para que o código chamador possa tratá-lo, se necessário
+      throw error; 
     }
-  },
-};
+  };
 
-export default RequestGet
+  export default RequestPost

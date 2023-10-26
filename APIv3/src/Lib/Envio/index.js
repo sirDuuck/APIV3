@@ -10,4 +10,4 @@ export async function CriarAtendimento(tel) {
   await WhatsAppCreateAtendimento(tel);
 }
 
-export default envio
+export default EnvioImg

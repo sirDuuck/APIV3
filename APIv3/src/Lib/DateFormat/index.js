@@ -1,4 +1,4 @@
-export function dateFormat(data) {
+export function DataFormat(data) {
   const dia = String(data.getDate()).padStart(2, '0');
   const mes = String(data.getMonth() + 1).padStart(2, '0'); // O mês começa de 0
   const ano = data.getFullYear();
@@ -8,3 +8,5 @@ export function dateFormat(data) {
 
   return `${dia}-${mes}-${ano}.${horas}:${minutos}:${segundos}`;
 }
+
+export default DataFormat

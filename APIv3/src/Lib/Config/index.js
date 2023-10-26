@@ -1,20 +1,19 @@
-import { getCNPJ } from "./APIv3/src/api/ConsultarCnpj/index.js";
-import { RequestPost } from "./APIv3/src/api/RequestGet/index.js";
-import { Process1 } from "./APIv3/src/lib/Process1/index.js";
-import { AgendaHora } from "./APIv3/src/Lib/Hora/index.js";
-import { WhatsAppSms } from "./APIv3/src/api/Whatsapp/index.js";
-import { normalizeString } from "./APIv3/src/Lib/Normalize/index.js";
-import { DataFormat } from "./APIv3/src/Lib/DateFormat/index.js";
-import { CriarAtendimento, EnvioImg } from "./APIv3/src/Lib/Envio/index.js";
+import ConsultarCNPJ from "../../api/ConsultarCnpj";
+import RequestGet from "../../api/RequestGet";
+import AgendaHora from "../AgendaHora";
+import DataFormat from "../DateFormat";
+import Process1 from "../Process1";
+ 
+
 
 export default async function Config(data, erp) {
   try {
     const [uni, tempo, empresa] = await Promise.all([
       Process1(erp),
-      AgendaHora(),
-      getCNPJ(data.cnpj)
+      AgendaHora (),
+      ConsultarCNPJ(data.cnpj)
     ]);
-
+    
     const { unidade: polo, whatsapp: tel, fantasia: nome } = uni;
 
     const vence = !data.vencimento ? "esta proximo de vencer" : data.vencimento;

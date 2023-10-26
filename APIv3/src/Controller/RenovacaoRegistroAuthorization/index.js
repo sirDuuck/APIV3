@@ -1,3 +1,5 @@
+import LogRegister from "../../Lib/LogRegister/index.js";
+
 const RenovacaoRegistroAuthorization = async (req, res) => {
   try {
     const data = req.body;

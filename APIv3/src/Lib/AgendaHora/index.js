@@ -57,7 +57,7 @@ const AgendaHora = async () => {
             ? "0" + h2
             : h2 === 0
                 ? "0" + h2
-                : data2.getHours();
+                : data2.getHours();AgendaHora
 
     const minutosa =
         data2.getMinutes() < 10 ? "0" + data2.getMinutes() : data2.getMinutes();
@@ -78,4 +78,4 @@ const AgendaHora = async () => {
     return resposta;
 };
 
-export default hora 
+export default AgendaHora 

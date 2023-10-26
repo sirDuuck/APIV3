@@ -1,5 +1,6 @@
-import { RequestGet } from ".APIv3/src/api/RequestGet/index.js";
-import { LogRegister } from ".APIv3/src/lib/log/index.js";
+import LogRegister from "../LogRegister";
+
+RequestGet
 
 const Process1 = {
  sendAutorization: async (authorization) => {
