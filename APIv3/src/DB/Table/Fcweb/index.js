@@ -84,4 +84,4 @@ const Fcweb = database.define('fcweb', { //nome da tabela a ser conectada
 //criar ou sincronizar a tabela
 // Fcweb.sync(); 
 
-export default Fcweb;
+export default Fcweb;import "dotenv/config";

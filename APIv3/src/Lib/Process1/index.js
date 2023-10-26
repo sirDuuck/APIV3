@@ -1,5 +1,5 @@
-import RequestGet from "../../api/RequestGet";
-import LogRegister from "../LogRegister";
+import RequestGet from "../../api/RequestGet/index.js";
+import LogRegister from "../LogRegister/index.js";
 
 
 

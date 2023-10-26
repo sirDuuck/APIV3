@@ -1,4 +1,4 @@
-import LogRegister from "../../Lib/LogRegister";
+import LogRegister from "../../Lib/LogRegister/index.js";
 
 const RenovacaoRegistroAuthorization = async (req, res) => {
   try {

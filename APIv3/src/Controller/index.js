@@ -1,10 +1,12 @@
-import ProcessRenovacao from "./Renovacao";
-import RenovacaoAgenda from "./RenovacaoAgenda";
-import RenovacaoCheck from "./RenovacaoCheck";
-import RenovacaoList from "./RenovacaoList";
-import RenovacaoRegistro from "./RenovacaoRegistro";
-import RenovacaoRegistroAuthorization from "./RenovacaoRegistroAuthorization";
-import RenovacaoURL from "./RenovacaoUrl";
+import ProcessRenovacao from "./Renovacao/index.js";
+import RenovacaoAgenda from "./RenovacaoAgenda/index.js";
+import RenovacaoCheck from "./RenovacaoCheck/index.js";
+import RenovacaoCheckCnpj from "./RenovacaoCheckCnpj/inde.js";
+import RenovacaoList from "./RenovacaoList/index.js";
+import RenovacaoRegistro from "./RenovacaoRegistro/index.js";
+import RenovacaoRegistroAuthorization from "./RenovacaoRegistroAuthorization/index.js";
+import RenovacaoURL from "./RenovacaoUrl/index.js";
+
 
 const ControllerGeral = {
     ProcessRenovacao,
@@ -13,7 +15,9 @@ const ControllerGeral = {
     RenovacaoList,
     RenovacaoRegistro,
     RenovacaoRegistroAuthorization,
-    RenovacaoURL
+    RenovacaoURL,
+    RenovacaoCheckCnpj
 };
 
 export default ControllerGeral
+

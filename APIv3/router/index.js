@@ -9,6 +9,8 @@ renovacao.post("/register/:authorization", ControllerGeral.RenovacaoRegistroAuth
 renovacao.post("/agenda", ControllerGeral.RenovacaoAgenda)
 renovacao.post("/registro", ControllerGeral.RenovacaoRegistro)
 
+
+
 //Get
 renovacao.get("/check/erp/:authorization", ControllerGeral.RenovacaoCheck)
 renovacao.get("/check/valid/:cnpj", ControllerGeral.RenovacaoCheckCnpj)

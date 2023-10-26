@@ -1,6 +1,6 @@
-import LogRegister from "../../Lib/LogRegister";
-import Process1 from "../../Lib/Process1";
-import Save from "../../Lib/Save";
+import LogRegister from "../../Lib/LogRegister/index.js";
+import Process1 from "../../Lib/Process1/index.js";
+import Save from "../../Lib/Save/index.js";
 
 
 

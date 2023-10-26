@@ -1,11 +1,11 @@
-import ConsultarCNPJ from "../../api/ConsultarCnpj";
-import RequestPost from "../../api/RequestPost";
-import Whatsapp from "../../api/WhatsappSms";
-import AgendaHora from "../AgendaHora";
-import CriarAtendimento from "../CriarAtendimeto";
-import DataFormat from "../DateFormat";
-import EnvioImg from "../Envio";
-import Process1 from "../Process1";
+import ConsultarCNPJ from "../../api/ConsultarCnpj/index.js";
+import RequestPost from "../../api/RequestPost/index.js";
+import Whatsapp from "../../api/WhatsappSms/index.js";
+import AgendaHora from "../AgendaHora/index.js";
+import CriarAtendimento from "../CriarAtendimeto/index.js";
+import DataFormat from "../DateFormat/index.js";
+import EnvioImg from "../Envio/index.js";
+import Process1 from "../Process1/index.js";
  
 
 const Config = async (data, erp) => {

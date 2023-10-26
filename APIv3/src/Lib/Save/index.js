@@ -1,5 +1,5 @@
-import Config from "../Config";
-import LogRegister from "../LogRegister";
+import Config from "../Config/index.js";
+import LogRegister from "../LogRegister/index.js";
 
 const Save = async (data, v3) => {
   const confg = await Config(data, v3);
