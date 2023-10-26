@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node -r dotenv/config index.js"
+    "start": "node -r dotenv/config ./index.js"
   },
   "author": "Alexandre Henrique da Rocha Araújo, Brando Souza de Araujo",
   "license": "MIT",
