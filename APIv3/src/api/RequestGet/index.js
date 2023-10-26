@@ -1,6 +1,3 @@
-import "dotenv/config";
-import axios from "axios";
-
 const RequestGet = {
   RequestGet: async (url) => {
     try {
@@ -13,7 +10,7 @@ const RequestGet = {
       return response.data;
     } catch (error) {
       console.error({ status: 400, message: 'A requisição falhou' });
-      throw error; // relança o erro para que o código chamador possa tratá-lo, se necessário
+      throw error;
     }
   },
 };

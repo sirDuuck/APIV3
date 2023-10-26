@@ -1,12 +1,14 @@
 import ConsultarCNPJ from "../../api/ConsultarCnpj";
-import RequestGet from "../../api/RequestGet";
+import RequestPost from "../../api/RequestPost";
+import Whatsapp from "../../api/WhatsappSms";
 import AgendaHora from "../AgendaHora";
+import CriarAtendimento from "../CriarAtendimeto";
 import DataFormat from "../DateFormat";
+import EnvioImg from "../Envio";
 import Process1 from "../Process1";
  
 
-
-export default async function Config(data, erp) {
+const Config = async (data, erp) => {
   try {
     const [uni, tempo, empresa] = await Promise.all([
       Process1(erp),
@@ -67,7 +69,7 @@ export default async function Config(data, erp) {
 
     async function sendSms(number, message) {
       await Promise.all([
-        WhatsAppSms(number, message),
+        Whatsapp(number, message),
         EnvioImg(number),
         CriarAtendimento(number)
       ]);
@@ -87,3 +89,6 @@ export default async function Config(data, erp) {
     console.log(error);
   }
 }
+
+
+export default Config
