@@ -1,6 +1,7 @@
+import RequestGet from "../../api/RequestGet";
 import LogRegister from "../LogRegister";
 
-RequestGet
+
 
 const Process1 = {
  sendAutorization: async (authorization) => {

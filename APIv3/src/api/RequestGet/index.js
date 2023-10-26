@@ -1,5 +1,4 @@
-const RequestGet = {
-  RequestGet: async (url) => {
+const RequestGet = async (url) => {
     try {
       const response = await axios({
         method: "Get",
@@ -12,7 +11,6 @@ const RequestGet = {
       console.error({ status: 400, message: 'A requisição falhou' });
       throw error;
     }
-  },
-};
+  };
 
 export default RequestGet
