@@ -32,7 +32,7 @@ const Config = async (data, erp) => {
     const EmpreEndFinal = normalizeString(empresa.end);
     const EmpreBairrFinal = normalizeString(empresa.bairro);
     const EmpreComplFinal = normalizeString(empresa.complemento);
-    const EmpreCityFinal = normalizeString(empresa.cidade);
+    const EmpreCityFinal = normalizeString(pempresa.cidade);
 
     const currentDate = new Date();
     const formattedDate = DataFormat(currentDate);
