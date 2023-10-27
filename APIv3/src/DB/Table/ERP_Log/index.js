@@ -1,6 +1,7 @@
 import { Sequelize } from "sequelize";
+import DataBase from "../../Connection/index.js";
 
-const ERP_LOG = database.define(
+const ERP_LOG = DataBase.define(
   "erp_log",
   {
     //nome da tabela a ser conectada
@@ -20,9 +21,6 @@ const ERP_LOG = database.define(
     error: Sequelize.TEXT,
   },
   { freezeTableName: true }
-); // função para conectar tebela ja criada
-
-//criar ou sincronizar a tabela
-// ERP_LOG.sync();
+); 
 
 export default ERP_LOG
