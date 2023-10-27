@@ -14,6 +14,6 @@ renovacao.post("/registro", ControllerGeral.RenovacaoRegistro)
 //Get
 renovacao.get("/check/erp/:authorization", ControllerGeral.RenovacaoCheck)
 renovacao.get("/check/valid/:cnpj", ControllerGeral.RenovacaoCheckCnpj)
-renovacao.get("list/user/max/polo", ControllerGeral.RenovacaoList)
+renovacao.get("/list/user/max/polo", ControllerGeral.RenovacaoList)
 
 export default renovacao

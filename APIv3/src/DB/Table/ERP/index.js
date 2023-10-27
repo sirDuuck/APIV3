@@ -1,6 +1,8 @@
-import Sequelize from "sequelize";
+import { Sequelize } from "sequelize";
+import DataBase from "../../Connection/index.js";
 
-const ERP = database.define(
+
+const ERP = DataBase.define(
   "erp",
   {
     //nome da tabela a ser conectada

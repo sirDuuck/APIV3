@@ -1,3 +1,6 @@
+import ERP from "../../DB/Table/ERP/index.js";
+import { Op } from "sequelize";
+
 const RenovacaoCheck = async (req, res) => {
     await ERP.findOne({
         where: {

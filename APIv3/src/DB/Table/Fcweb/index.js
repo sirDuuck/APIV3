@@ -1,6 +1,7 @@
-import Sequelize from 'sequelize';
+import { Sequelize } from "sequelize";
+import DataBase from "../../Connection/index.js";
 
-const Fcweb = database.define('fcweb', { //nome da tabela a ser conectada
+const Fcweb = DataBase.define('fcweb', { //nome da tabela a ser conectada
      
      id: {
           type: Sequelize.INTEGER,
