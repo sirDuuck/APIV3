@@ -9,10 +9,11 @@ import EnvioImg from "../Envio/index.js";
 import normalizeString from "../normalizeString/index.js"
 
 
+
 const Config = async (data, erp) => {
   try {
     const [uni, tempo, empresa] = await Promise.all([
-      Process1(erp),
+      Process1.sendAutorization(erp),
       AgendaHora (),
       ConsultarCNPJ(data.cnpj)
     ]);
@@ -32,7 +33,7 @@ const Config = async (data, erp) => {
     const EmpreEndFinal = normalizeString(empresa.end);
     const EmpreBairrFinal = normalizeString(empresa.bairro);
     const EmpreComplFinal = normalizeString(empresa.complemento);
-    const EmpreCityFinal = normalizeString(pempresa.cidade);
+    const EmpreCityFinal = normalizeString(empresa.cidade);
 
     const currentDate = new Date();
     const formattedDate = DataFormat(currentDate);

@@ -5,13 +5,19 @@ import Save from "../../Lib/Save/index.js";
 const RenovacaoRegistroAuthorization = async (req, res) => {
   try {
     const data = req.body;
-    console.log(data);
     const token = req.params.authorization;
-    const uni = await Process1(token);
-
+    const uni = await Process1.sendAutorization(token);
+console.log(data)
+console.log('uni', uni)
+console.log(data.cpf)
+// console.log()
+// console.log()
+// console.log()
+// console.log()
+// console.log()
     if (!uni) {
       const logData = {
-        rerrpr: "ERP bloqueado",
+        error: "ERP bloqueado",
       };
       const reg = await LogRegister(logData);
       console.log(reg);
@@ -45,7 +51,9 @@ const RenovacaoRegistroAuthorization = async (req, res) => {
       console.log("cpf e cnpj vazio");
       res.status(500).send("the name is missing");
     } else {
+      console.log('data', data)
       const reg = await Save(data, token);
+      console.log('registro', reg)
       res.status(201).json(reg);
     }
   } catch (error) {

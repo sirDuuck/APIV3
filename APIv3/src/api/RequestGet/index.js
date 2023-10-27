@@ -1,4 +1,7 @@
+import axios from "axios";
+
 const RequestGet = async (url) => {
+  console.log('url', process.env.SERVE_CONSULT + url)
     try {
       const response = await axios({
         method: "Get",

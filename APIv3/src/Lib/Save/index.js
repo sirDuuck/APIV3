@@ -2,7 +2,10 @@ import Config from "../Config/index.js";
 import LogRegister from "../LogRegister/index.js";
 
 const Save = async (data, v3) => {
+  console.log('data', data)
+  console.log('v3', v3)
   const confg = await Config(data, v3);
+  console.log('config', confg)
   const dados = {
     user: confg.data.contador,
     clienteId: confg.data.id,
