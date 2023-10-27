@@ -1,9 +1,10 @@
 import LogRegister from "../../Lib/LogRegister/index.js";
+import Save from "../../Lib/Save/index.js";
 
 const RenovacaoRegistroAuthorization = async (req, res) => {
   try {
     const data = req.body;
-    console.log(data);
+   // console.log(data);
     const token = req.params.authorization;
     const uni = await Process1(token);
 

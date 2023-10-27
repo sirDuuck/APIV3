@@ -1,3 +1,5 @@
+import Fcweb from "../../DB/Table/Fcweb/index.js";
+
 const RenovacaoAgenda = async (req, res) => {
     try {
         const dados = req.body;

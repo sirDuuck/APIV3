@@ -1,4 +1,4 @@
-import Sequelize from "sequelize";
+import { Sequelize } from "sequelize";
 
 const ERP_LOG = database.define(
   "erp_log",
@@ -25,4 +25,4 @@ const ERP_LOG = database.define(
 //criar ou sincronizar a tabela
 // ERP_LOG.sync();
 
-export default ERP_Log;
+export default ERP_LOG
