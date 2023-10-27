@@ -1,4 +1,4 @@
-function normalizeString(input) {
+function normalizeString  (input) {
     if (!input) {
         return ''; // ou qualquer valor padrão que você queira
     }
@@ -11,4 +11,4 @@ function normalizeString(input) {
         .replace(/[\u0300-\u036f]/g, "");
 };
 
-export default Normalize
+export default normalizeString

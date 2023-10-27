@@ -1,5 +1,5 @@
-import "dotenv/config";
 import axios from "axios";
+import "dotenv/config";
 
 const RequestPost = async (url, data) => {
     try {
