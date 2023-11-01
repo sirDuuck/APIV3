@@ -69,22 +69,22 @@ const Config = async (data, erp) => {
       scp: "A PAGAR",
     };
     
-    console.log('Whatsapp')
+    console.log('sendSms')
     console.log('EnvioImg')
     console.log('CriarAtendimento')
-    async function Whatsapp(number, message) {
+    async function sendSms(number, message) {
       await Promise.all([
-        Whatsapp(number, message),
+        sendSms(number, message),
         EnvioImg(number),
         CriarAtendimento(number)
       ]);
     };
     if (data.telefone) {
-      Whatsapp(data.telefone, `Olá! *${NomeClientFinal}*\nTudo bem?!\n\nSomos a *Rede Brasil RP*!\nParceiros da *${nome}*!\n\nEstamos lhe enviando essa mensagem para informar que já recebemos a sua solicitação!\nPedimos que aguarde,\naté às *${tempo.htagenda}* de *${tempo.agendVisual}*\nque entraremos em contato!\nSe preferir, retornar essa mensagem ou\nligar para *16 3325-4134*`);
+      sendSms(data.telefone, `Olá! *${NomeClientFinal}*\nTudo bem?!\n\nSomos a *Rede Brasil RP*!\nParceiros da *${nome}*!\n\nEstamos lhe enviando essa mensagem para informar que já recebemos a sua solicitação!\nPedimos que aguarde,\naté às *${tempo.htagenda}* de *${tempo.agendVisual}*\nque entraremos em contato!\nSe preferir, retornar essa mensagem ou\nligar para *16 3325-4134*`);
     }
         console.log('data.telefone2')
     if (data.telefone2) {
-      Whatsapp(data.telefone2, `Olá! *${NomeClientFinal}*\nTudo bem?!\n\nSomos a Rede Brasil RP!\nParceiros da *${nome}*!\n\nEstamos lhe enviando essa mensagem para informar que já recebemos a sua solicitação!\nPedimos que aguarde,\naté às *${tempo.htagenda}* de *${tempo.agendVisual}*\nque entraremos em contato!\nSe preferir, retornar essa mensagem ou\nligar para *16 3325-4134*`);
+      sendSms(data.telefone2, `Olá! *${NomeClientFinal}*\nTudo bem?!\n\nSomos a Rede Brasil RP!\nParceiros da *${nome}*!\n\nEstamos lhe enviando essa mensagem para informar que já recebemos a sua solicitação!\nPedimos que aguarde,\naté às *${tempo.htagenda}* de *${tempo.agendVisual}*\nque entraremos em contato!\nSe preferir, retornar essa mensagem ou\nligar para *16 3325-4134*`);
     }
 
     const url = "/agenda";
