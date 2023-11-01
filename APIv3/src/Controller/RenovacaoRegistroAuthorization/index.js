@@ -8,7 +8,7 @@ const RenovacaoRegistroAuthorization = async (req, res) => {
     const token = req.params.authorization;
     const uni = await Process1.sendAutorization(token);
 console.log(data)
-console.log('uni', uni)
+console.log('token', token)
 console.log(data.cpf)
 // console.log()
 // console.log()
@@ -61,4 +61,4 @@ console.log(data.cpf)
   }
 };
 
-export default RenovacaoRegistroAuthorization;
+export default RenovacaoRegistroAuthorization

@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const Whatsapp = {
-    sendTxt: async (tel, sms) => {
+    sendSms: async (tel, sms) => {
         try {
             const URL = `${process.env.ZAP_URL_API}/core/v2/api/chats/send-text`
             const Requeste = await axios({
@@ -26,7 +26,7 @@ const Whatsapp = {
             return `Mensagen não entrege: erro = ${JSON.stringify(error)}`
         }
     },
-    sendIng: async () => {
+    sendImg: async () => {
 
     },
     AttCreate: async () => { }

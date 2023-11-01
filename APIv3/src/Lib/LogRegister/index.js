@@ -1,5 +1,5 @@
 import RequestPost from "../../api/RequestPost/index.js";
-
+console.log('LogRegister')
 const LogRegister = async (data) => {
     const url = "/registro";
     const check = await RequestPost(url, {

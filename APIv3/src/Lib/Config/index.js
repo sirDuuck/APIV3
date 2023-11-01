@@ -14,10 +14,10 @@ const Config = async (data, erp) => {
   try {
     const [uni, tempo, empresa] = await Promise.all([
       Process1.sendAutorization(erp),
-      AgendaHora (),
+      AgendaHora(),
       ConsultarCNPJ(data.cnpj)
     ]);
-    
+
     const { unidade: polo, whatsapp: tel, fantasia: nome } = uni;
 
     const vence = !data.vencimento ? "esta proximo de vencer" : data.vencimento;
@@ -68,20 +68,23 @@ const Config = async (data, erp) => {
       validacao: "ERP",
       scp: "A PAGAR",
     };
-
-    async function sendSms(number, message) {
+    
+    console.log('Whatsapp')
+    console.log('EnvioImg')
+    console.log('CriarAtendimento')
+    async function Whatsapp(number, message) {
       await Promise.all([
         Whatsapp(number, message),
         EnvioImg(number),
         CriarAtendimento(number)
       ]);
-    }
-
+    };
     if (data.telefone) {
-      sendSms(data.telefone, `Olá! *${NomeClientFinal}*\nTudo bem?!\n\nSomos a *Rede Brasil RP*!\nParceiros da *${nome}*!\n\nEstamos lhe enviando essa mensagem para informar que já recebemos a sua solicitação!\nPedimos que aguarde,\naté às *${tempo.htagenda}* de *${tempo.agendVisual}*\nque entraremos em contato!\nSe preferir, retornar essa mensagem ou\nligar para *16 3325-4134*`);
+      Whatsapp(data.telefone, `Olá! *${NomeClientFinal}*\nTudo bem?!\n\nSomos a *Rede Brasil RP*!\nParceiros da *${nome}*!\n\nEstamos lhe enviando essa mensagem para informar que já recebemos a sua solicitação!\nPedimos que aguarde,\naté às *${tempo.htagenda}* de *${tempo.agendVisual}*\nque entraremos em contato!\nSe preferir, retornar essa mensagem ou\nligar para *16 3325-4134*`);
     }
+        console.log('data.telefone2')
     if (data.telefone2) {
-      sendSms(data.telefone2, `Olá! *${NomeClientFinal}*\nTudo bem?!\n\nSomos a Rede Brasil RP!\nParceiros da *${nome}*!\n\nEstamos lhe enviando essa mensagem para informar que já recebemos a sua solicitação!\nPedimos que aguarde,\naté às *${tempo.htagenda}* de *${tempo.agendVisual}*\nque entraremos em contato!\nSe preferir, retornar essa mensagem ou\nligar para *16 3325-4134*`);
+      Whatsapp(data.telefone2, `Olá! *${NomeClientFinal}*\nTudo bem?!\n\nSomos a Rede Brasil RP!\nParceiros da *${nome}*!\n\nEstamos lhe enviando essa mensagem para informar que já recebemos a sua solicitação!\nPedimos que aguarde,\naté às *${tempo.htagenda}* de *${tempo.agendVisual}*\nque entraremos em contato!\nSe preferir, retornar essa mensagem ou\nligar para *16 3325-4134*`);
     }
 
     const url = "/agenda";
